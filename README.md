@@ -116,22 +116,22 @@
 ##II. Image Painting.
 
     1. Yêu cầu Model: mạng Unet sử dụng Skip Connection.
-    
+        
     2. Các bước thực hiện: 
-    
-        • Xây dựng datset từ ảnh gốc. Khi load ảnh mỗi sample các bạn tạo ra 2 ảnh (input và target).
-Input là ảnh gốc và được vẽ thêm các line random, target là ảnh gốc.
-        • Chia data thành các tập train, validation.
-        • Normalize data phải phù hợp với activation của layer cuối trong model để đảm bảo output có giá trị             trong range các giá trị của ảnh thông thường.
-        • Lựa chọn Loss và metrics phù hợp cho bài toán.
-        • Config các hyperparameter.
-        • Train và test kết quả.
-        • Ta sẽ xây dựng từng file .py bao gồm: 
-            - Library.py (file chứ các thư viện cần thiết).
-            - Prepare_Dataset.py (file chuẩn bị dataset cho model).
-            - Train_Val.py (file gồm các hàm được dùng để huấn luyện và đánh giá kết quả)
-            - UnetSkipConnection.py (file model Unet sử dụng SkipConnection).
-            - run_modelPainting.ipynb (file train model sử dụng gpu).
+        
+            • Xây dựng datset từ ảnh gốc. Khi load ảnh mỗi sample các bạn tạo ra 2 ảnh (input và target).
+    Input là ảnh gốc và được vẽ thêm các line random, target là ảnh gốc.
+            • Chia data thành các tập train, validation.
+            • Normalize data phải phù hợp với activation của layer cuối trong model để đảm bảo output có giá trị             trong range các giá trị của ảnh thông thường.
+            • Lựa chọn Loss và metrics phù hợp cho bài toán.
+            • Config các hyperparameter.
+            • Train và test kết quả.
+            • Ta sẽ xây dựng từng file .py bao gồm: 
+                - Library.py (file chứ các thư viện cần thiết).
+                - Prepare_Dataset.py (file chuẩn bị dataset cho model).
+                - Train_Val.py (file gồm các hàm được dùng để huấn luyện và đánh giá kết quả)
+                - UnetSkipConnection.py (file model Unet sử dụng SkipConnection).
+                - run_modelPainting.ipynb (file train model sử dụng gpu).
     
     3. Kết quả của sau khi train.
 
