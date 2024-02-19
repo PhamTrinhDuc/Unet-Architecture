@@ -80,6 +80,7 @@
     3. Kết quả của sau khi train.
         Đối với model Unet sử dụng Skip Connection:
         
+        
 ![image](https://github.com/PhamTrinhDuc/Unet-Architecture/assets/127647215/8f614901-dd5e-4e58-a967-2c89e24f0ac0)
 
 
@@ -87,6 +88,7 @@
 
 
         Đối với model Unet không sử dụng Skip Connection:
+        
 
 ![image](https://github.com/PhamTrinhDuc/Unet-Architecture/assets/127647215/59c3c58d-6aaa-4b9b-9819-3ce29874192e)
 
