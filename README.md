@@ -63,12 +63,15 @@
 ##I. Task Super Resolution
 
     1. Yêu cầu Model: mạng Unet sử dụng Skip Connection và không có Skip Connection, sau đó so sánh kết quả giữa 2 model.
+    
     2. Các bước thực hiện: 
-        • Xây dựng dataset từ ảnh gốc (256x256x3). Khi load ảnh, mỗi sample cần có 2 ảnh input và target. Input là: ảnh gốc resize 4 lần (64x64x3), target là ảnh gốc (256x256x3).
+        • Xây dựng dataset từ ảnh gốc (256x256x3). Khi load ảnh, mỗi sample cần có 2 ảnh input và target. 
+        Input là: ảnh gốc resize 4 lần (64x64x3), target là ảnh gốc (256x256x3).
+        
         • Chia data thành các tập train, validation.
         • Normalize data phải phù hợp với activation của layer cuối trong model để đảm bảo output có giá trị             trong range các giá trị của ảnh thông thường.
         • Lựa chọn Loss và metrics phù hợp cho bài toán.
-        • Config các hyperparameter.
+        • Config các hyperparameter.        
         • Train và test kết quả.
         • Ta sẽ xây dựng từng file .py bao gồm: 
             - Library.py (file chứ các thư viện cần thiết).
