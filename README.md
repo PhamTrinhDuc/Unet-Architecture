@@ -80,16 +80,16 @@
     3. Kết quả của sau khi train.
         Đối với model Unet sử dụng Skip Connection:
         
-        ![image](https://github.com/PhamTrinhDuc/Unet-Architecture/assets/127647215/9e740e42-95e6-4b23-a667-eff310206663)
+    ![image](https://github.com/PhamTrinhDuc/Unet-Architecture/assets/127647215/8c0ca76b-eb24-45e2-9898-7b0c036bc02a)
 
 
-        ![image](https://github.com/PhamTrinhDuc/Unet-Architecture/assets/127647215/0fd1f1a8-1054-4384-a516-4062f5ff1ea3)
+    ![image](https://github.com/PhamTrinhDuc/Unet-Architecture/assets/127647215/0fd1f1a8-1054-4384-a516-4062f5ff1ea3)
 
         Đối với model Unet không sử dụng Skip Connection:
 
-        ![image](https://github.com/PhamTrinhDuc/Unet-Architecture/assets/127647215/9c2127e5-ae12-4d7b-8f23-ad22441ffc0e)
+    ![image](https://github.com/PhamTrinhDuc/Unet-Architecture/assets/127647215/9c2127e5-ae12-4d7b-8f23-ad22441ffc0e)
 
-        ![image](https://github.com/PhamTrinhDuc/Unet-Architecture/assets/127647215/814555c1-dc9a-4477-b724-2429b5fc9ae8)
+    ![image](https://github.com/PhamTrinhDuc/Unet-Architecture/assets/127647215/814555c1-dc9a-4477-b724-2429b5fc9ae8)
 
 
 
