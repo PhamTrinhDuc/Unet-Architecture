@@ -114,8 +114,11 @@
         
 
 ##II. Image Painting.
+
     1. Yêu cầu Model: mạng Unet sử dụng Skip Connection.
+    
     2. Các bước thực hiện: 
+    
         • Xây dựng datset từ ảnh gốc. Khi load ảnh mỗi sample các bạn tạo ra 2 ảnh (input và target).
 Input là ảnh gốc và được vẽ thêm các line random, target là ảnh gốc.
         • Chia data thành các tập train, validation.
