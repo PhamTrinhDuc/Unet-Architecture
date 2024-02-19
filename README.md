@@ -1,4 +1,4 @@
-## Introduction
+## Introduction.
 
 1. Giới thiệu mạng Unet: 
     UNET là một mô hình mạng nơ-ron sâu được phát triển bởi Olaf Ronneberger, Philipp Fischer
@@ -19,13 +19,13 @@
         • Mục đích: Tạo Tạo feature map ban đầu từ input
         • Thành phần: Một lớp convolution duy nhất theo sau là hàm LeakyReLU. convolution này
         sử dụng kích thước kernel là 1, bước nhảy là 1 và không padding. Đây là một lớp đơn giản
-        được thiết kế để mở rộng số lượng channel cho feature map
+        được thiết kế để mở rộng số lượng channel cho feature map.
     
     ConvBlock Class:
         
         • Mục đích: Khối convolution cơ bản để trích xuất đặc trưng
         • Thành phần: Hai nhóm Conv-BatchNorm-LeakyReLU liên tục. Khối này là một khối cơ
-        bản trong U-Net, được sử dụng cho cả down-sampling và up-sampling
+        bản trong U-Net, được sử dụng cho cả down-sampling và up-sampling.
     
     Encoder Class:
         
@@ -45,7 +45,7 @@
     
         • Mục đích: Tạo ra đầu ra cuối cùng từ feature map cuối cùng.
         • Thành phần: Một lớp convolution với hàm Tanh. Điều này giảm số lượng channel đầu ra
-        xuống bằn số lượng channel của ảnh màu
+        xuống bằn số lượng channel của ảnh màu.
     
     Unet Class:
     
@@ -58,8 +58,36 @@
         
         • Forward: Đầu vào được xử lý qua các convolution ban đầu. Sau đó được downsample 4 lần,
         rồi được up sample lên 4 lần mỗi lần kết hợp với feature từ encoder. Cuối cùng đi qua lớp
-        convolution cuối cùng để tạp ảnh đã xử lý
+        convolution cuối cùng để tạp ảnh đã xử lý.
     
-## 1. Task Super Resolution
+## I. Task Super Resolution
+
+    1. Yêu cầu Model: mạng Unet sử dụng Skip Connection và không có Skip Connection, sau đó so sánh kết quả
     
+giữa 2 model.
+
+    2. Các bước thực hiện: 
     
+        • Xây dựng dataset từ ảnh gốc (256x256x3). Khi load ảnh, mỗi sample cần có 2 ảnh input và target. Input là: ảnh gốc resize 4 lần (64x64x3), target là ảnh gốc (256x256x3).
+          
+        • Chia data thành các tập train, validation.
+        
+        • Normalize data phải phù hợp với activation của layer cuối trong model để đảm bảo output có giá trị             trong range các giá trị của ảnh thông thường.
+        
+        • Lựa chọn Loss phù hợp cho bài toán.
+        
+        • Config các hyperparameter.
+        
+        • Train và test kết quả.
+
+        • Ta sẽ xây dựng từng file .py bao gồm: 
+            Library.py (file chứ các thư viện cần thiết).
+            Prepare_Dataset.py (file chuẩn bị dataset cho model).
+            Train_Val.py (file gồm các hàm được dùng để huấn luyện và đánh giá kết quả)
+            UnetNoSkipConnection.py (model Unet không sử dụng SkipConnection).
+            UnetSkipConnection.py (model Unet sử dụng SkipConnection).
+            2 file ipynb để train 2 model trên sử dụng gpu của colab.
+
+    3. Kết quả của sau khi train.
+
+        
