@@ -60,7 +60,7 @@
         rồi được up sample lên 4 lần mỗi lần kết hợp với feature từ encoder. Cuối cùng đi qua lớp
         convolution cuối cùng để tạp ảnh đã xử lý.
     
-##I. Task Super Resolution
+## I. Task Super Resolution
 
     1. Yêu cầu Model: mạng Unet sử dụng Skip Connection và không có Skip Connection, sau đó so sánh kết quả giữa 2 model.
     
@@ -113,7 +113,7 @@
         • Giảm nguy cơ overfitting.
         
 
-##II. Image Painting.
+## II. Image Painting.
 
     1. Yêu cầu Model: mạng Unet sử dụng Skip Connection.
         
