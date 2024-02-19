@@ -99,8 +99,7 @@
 
 
     4. Nhận xét: Xem xét 2 hình trên ta thấy được mạng có sử dụng Skip Connection tốt hơn nhiều so
-    
-với mạng không sử dụng Skip Connection. Một số chức năng của Skip Connection: 
+    với mạng không sử dụng Skip Connection. Một số chức năng của Skip Connection: 
     
         • Kết hợp các đặc trưng từ nhiều cấp độ khác nhau của ảnh, giúp ảnh có độ chính xác cao hơn.
         
