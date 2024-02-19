@@ -139,6 +139,5 @@ Input là ảnh gốc và được vẽ thêm các line random, target là ảnh
 ![Screenshot 2024-02-19 212937](https://github.com/PhamTrinhDuc/Unet-Architecture/assets/127647215/87eea181-c054-4749-9fd9-92ddc9460874)
 
     4. Nhận xét:
-
     Đối với những line lớn model cho kết quả chưa được tốt lắm, ngược lại với các line nhỏ thì kết quả đã khá tốt.
         
