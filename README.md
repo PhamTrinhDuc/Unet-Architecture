@@ -61,23 +61,14 @@
         convolution cuối cùng để tạp ảnh đã xử lý.
     
 ## I. Task Super Resolution
-
         1. Yêu cầu Model: mạng Unet sử dụng Skip Connection và không có Skip Connection, sau đó so sánh kết quả giữa 2 model.
-    
         2. Các bước thực hiện: 
-        
             • Xây dựng dataset từ ảnh gốc (256x256x3). Khi load ảnh, mỗi sample cần có 2 ảnh input và target. Input là: ảnh gốc resize 4 lần (64x64x3), target là ảnh gốc (256x256x3).
-              
             • Chia data thành các tập train, validation.
-            
             • Normalize data phải phù hợp với activation của layer cuối trong model để đảm bảo output có giá trị             trong range các giá trị của ảnh thông thường.
-            
-            • Lựa chọn Loss phù hợp cho bài toán.
-            
+            • Lựa chọn Loss và metrics phù hợp cho bài toán.
             • Config các hyperparameter.
-            
             • Train và test kết quả.
-    
             • Ta sẽ xây dựng từng file .py bao gồm: 
                 - Library.py (file chứ các thư viện cần thiết).
                 - Prepare_Dataset.py (file chuẩn bị dataset cho model).
@@ -86,6 +77,21 @@
                 - UnetSkipConnection.py (model Unet sử dụng SkipConnection).
                 - 2 file ipynb để train 2 model trên sử dụng gpu của colab.
 
-    3. Kết quả của sau khi train.
+        3. Kết quả của sau khi train.
+            Đối với model Unet sử dụng Skip Connection:
+            
+            ![image](https://github.com/PhamTrinhDuc/Unet-Architecture/assets/127647215/9e740e42-95e6-4b23-a667-eff310206663)
 
+
+            ![image](https://github.com/PhamTrinhDuc/Unet-Architecture/assets/127647215/0fd1f1a8-1054-4384-a516-4062f5ff1ea3)
+
+            Đối với model Unet không sử dụng Skip Connection:
+
+            ![image](https://github.com/PhamTrinhDuc/Unet-Architecture/assets/127647215/9c2127e5-ae12-4d7b-8f23-ad22441ffc0e)
+
+            ![image](https://github.com/PhamTrinhDuc/Unet-Architecture/assets/127647215/814555c1-dc9a-4477-b724-2429b5fc9ae8)
+
+
+
+            
         
