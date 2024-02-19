@@ -1,6 +1,6 @@
 ## Introduction
 
-Giới thiệu mạng Unet: 
+1.Giới thiệu mạng Unet: 
     UNET là một mô hình mạng nơ-ron sâu được phát triển bởi Olaf Ronneberger, Philipp Fischer
     và Thomas Brox vào năm 2015, chủ yếu được sử dụng trong lĩnh vực xử lý ảnh và trí tuệ nhân
     tạo (AI). Mô hình này đã đạt được sự phổ biến rộng rãi trong các ứng dụng liên quan đến phân
@@ -11,9 +11,9 @@ Giới thiệu mạng Unet:
     tạo đường dẫn ngắn từ đầu vào đến đầu ra. Hàm kích hoạt thường được sử dụng trong UNET là
     Rectified Linear Unit (ReLU).
 
-Ở task này ta sẽ làm 2 ứng dụng của mạng Unet là: tăng độ phân giải của ảnh(Super Resolution) và tái tạo một phần bị thiếu hay bị che khuất của ảnh(Image Painting).
+2.Ở task này ta sẽ làm 2 ứng dụng của mạng Unet là: tăng độ phân giải của ảnh(Super Resolution) và tái tạo một phần bị thiếu hay bị che khuất của ảnh(Image Painting).
 
-Cấu trúc mạng Unet trong task này: 
+3.Cấu trúc mạng Unet trong task này: 
 
 FirstFeature Class:
     • Mục đích: Tạo Tạo feature map ban đầu từ input
